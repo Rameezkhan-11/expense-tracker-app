@@ -1,12 +1,13 @@
 import React,{useContext} from 'react';
 import './App.css'
-import {GlobalState} from './Context';
+
 
 function Header(){
-    const {transactions} = useContext(GlobalState);
+    
 return(
     <>  
         <h1>Expense Tracker App</h1>
+        <p style={{textAlign : 'center',color : 'blue'}}>By Rameez khan</p>
         
 
     </>

@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
-import { GlobalProvider} from './Context';
-
+// import { GlobalProvider} from './Context';/
+import {GlobalState} from './Context';
 
 
 function List ({transactions}){
-    const {del} = useContext(GlobalProvider);
+    const {del} = useContext(GlobalState);
     
     const sign = transactions.amount < 0 ? '-' : '+';
     
